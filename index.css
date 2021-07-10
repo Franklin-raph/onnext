@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(75, 75, 75);
+    position: relative;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.fa-bars{
+    color: rgb(0, 0, 0);
+}
+
+.showcase{
+    position: relative;
+    background-image:
+    linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0,0.6)),
+    url(/uploads/banner-01.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+} 
+
+.nav-item a{
+    color: rgb(255, 255, 255);
+    font-weight: 550;
+}
+
+.bg-nav{
+    background-color: rgb(255, 255, 255);
+}
+
+#welcomeItems{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    color: #fff;
+}
+
+#welcomeText h1{
+    font-size: 72px;
+    font-weight: bold;
+}
+
+#showcaseLorem{
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#showcaseLorem span{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.showcaseBtn a{
+    padding: 10px 15px;
+    margin: 0px 5px;
+}
+
+#showcaseBtn-gs{
+    background-color: #fff;
+    color:rgb(46, 46, 46);
+    border-radius: 50px;
+}
+
+#showcaseBtn-lm{
+    background-color: rgb(46, 46, 46);
+    color:#fff;
+    border-radius: 50px;
+}
+
+#showcaseBtn-gs:hover{
+    background-color: rgb(0, 162, 255) ;
+    color:#fff;
+}
+
+#showcaseBtn-lm:hover{
+    background-color: rgb(0, 162, 255) ;
+    color:#fff;
+}
+
+#about-us{
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+#about-image{
+    height: 90%;
+    width: 90%;
+    box-shadow: 1px 3px 4px #000;
+}
+
+#about-head{
+font-weight: bold;
+font-size: 38px;
+}
+
+#contact-btn{
+    padding: 12px 17px;
+    text-decoration: none;
+    background-color: rgb(46, 46, 46);
+    color:#fff;
+    border-radius: 50px;
+}
+#contact-btn:hover{
+    background-color: rgb(0, 162, 255);
+}
+
+.services{
+    background-color: rgb(240, 240, 240);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.services h2{
+    padding-bottom: 1rem;
+}
+
+.services p{
+    font-weight: 350;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+#service-card{
+    margin-right: 20px;
+    margin-top: 40px;
+    border-radius: 50px 50px 0 50px;
+    color: rgb(77, 77, 77);
+}
+
+#service-card:hover{
+    background-color:rgb(0, 162, 255) ;
+    color: #fff!important;
+}
+
+.services h4{
+    font-weight: 580;
+}
+
+.card:hover .flaticon-idea{
+    color: #fff;
+}
+.card:hover .flaticon-idea-1{
+    color: #fff;
+}
+.card:hover .flaticon-process{
+    color: #fff;
+}
+.card:hover .flaticon-seo{
+    color: #fff;
+}
+.card:hover .flaticon-development{
+    color: #fff;
+}
+.card:hover .flaticon-discuss-issue{
+    color: #fff;
+}
+
+.flaticon-idea,
+.flaticon-idea-1,
+.flaticon-process,
+.flaticon-seo,
+.flaticon-development,
+.flaticon-discuss-issue{
+    color: rgb(77, 77, 77);
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.portfolio{
+    position: relative;
+    background-color: rgb(240, 240, 240);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.portfolio h2{
+    padding-bottom: 1rem;
+}
+
+.portfolio p{
+    font-weight: 350;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: larger;
+}
+
+#portfolio-card{
+    margin-right: 20px;
+    margin-top: 40px;
+    border-radius: 50px 50px 0 50px;
+}
+
+#portfolio-card img{
+    border-radius: 50px 50px 0 50px;
+    z-index: 1;
+}
+
+/* .portfolio-img{
+    width: 30px;
+    height: 30px;
+} */
+
+#portfolioBtnAll, #portfolioBtnWeb,
+#portfolioBtnCd,#portfolioBtnGd{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border-radius: 50px 50px 0 50px;
+    padding: 10px 50px;
+    box-shadow: 1px 1px 1px rgb(163, 163, 163);
+    font-weight: 500;
+}
+
+#portfolioBtnAll:hover {
+    background-color: rgb(0, 162, 255);
+    color: #fff;
+}
+
+#portfolioBtnWeb:hover {
+    background-color: rgb(0, 162, 255);
+    color: #fff;
+}
+
+#portfolioBtnCd:hover {
+    background-color: rgb(0, 162, 255);
+    color: #fff;
+}
+
+#portfolioBtnGd:hover {
+    background-color: rgb(0, 162, 255);
+    color: #fff;
+}
+
+.blog{
+    background-color: rgb(240, 240, 240);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#blog-img{
+    margin-right: 20px;
+    margin-bottom: 40px;
+    border-radius: 50px 50px 0 50px;
+    width: 20rem;
+}
+
+.blog-card{
+    background-color: rgb(255, 255, 255);
+    width: 20rem;
+    border-radius: 55px 55px 0 0px;
+    position: relative;
+    margin:0 auto 2rem auto;
+}
+
+.blog .lead{
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+#blog-text{
+    padding: 0 15px 15px 15px;
+}
+
+#blog-text span{
+    font-weight: bold;
+}
+
+.blog-date{
+    position: absolute;
+    top: 34%;
+    left: 72%;
+    color: #fff;
+    width: 85px;
+    height: 45px;
+    background-color: rgb(0, 162, 255);
+    padding-top: 10px;
+    text-align: center;
+}
+
+.team-card{
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.team-card #team-img{
+    width: 80%;
+    margin:2rem 2rem 0 2rem;
+    border-radius: 300px 300px 0 300px;
+}
+
+.team-name{
+    padding: 20px 0 16px 0;
+}
+
+.team-social{
+    position: absolute;
+    margin:0 1rem 2rem 1rem;
+    left: 15%;
+}
+
+.team-name h4{
+    color: rgb(0, 162, 255);
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+#team-text p{
+    font-size: 1.2rem;
+}
+
+.team-card:hover #team-img{
+    border-radius: 0;
+}
+
+.team-card:hover .fa-twitter{
+    color: #333;
+}
+
+.team-card:hover .fa-google-plus{
+    color: #333;
+}
+
+.team-card:hover .fa-skype{
+    color: #333;
+}
+
+.team-card:hover .fa-facebook{
+    color: #333;
+}
+
+.pricing{
+    background-color: rgb(240, 240, 240);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.pricing .lead{
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.pricing .card{
+    border-radius: 20px;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
+}
+
+.top-price{
+    padding: 3.5rem;
+    color: #fff;
+    background-color: rgb(0, 162, 255);
+    border-radius:20px 20px 0 0;
+}
+
+.pricing .card-body p{
+    text-align: center;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+.pricing .card-body h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(0, 162, 255);
+    margin:1rem 0 2rem 0;
+}
+
+.top-price span{
+    font-size: 12px;
+}
+
+.pricing .card-body p span{
+    font-weight: 510;
+}
+
+.pricing .card:hover{
+    box-shadow: 1px 3px 15px #333;
+}
+
+.pricing .card-body .btn{
+    position: absolute;
+    left: 19%;
+    margin: 12px 0;
+    border-radius: 22px;
+    padding: 10px 50px;
+}
+
+.pricing .card-body a{
+    font-weight: 510;
+}
+
+.pricing .card-body a:hover{
+    background-color: rgb(0, 162, 255);
+    box-shadow: 2px 2px 10px rgb(0, 162, 255);
+    border: none;
+}
+
+#my-contact{
+    background-color:rgb(240, 240, 240);
+    padding: 3rem;
+    box-shadow: 2px 2px 20px rgb(197, 197, 197);
+    height: 24rem;
+}
+
+.contact input{
+    width: 100%;
+    margin: 12px 0 12px 0;
+    background-color: #333;
+    border: none;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+#contact-text{
+    margin-bottom: 1rem;
+}
+
+.contact a{
+    position: absolute;
+    left: 45%;
+    border: none;
+    border-radius: 50px;
+    color:#fff;
+    padding: 12px 24px;
+}
+
+.contact a:hover{
+    background-color: rgb(0, 162, 255);
+}
+
+.footer{
+    background-color: #333;
+    position: relative;
+    margin-top: 3.5rem;
+    padding-bottom: 3rem;
+}
+
+ #footer-img{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 2rem;
+} 
+
+.footer a{
+    color: #fff;
+    padding-right: 1rem;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.footer a:hover{
+    color: rgb(99, 99, 99);
+}
+
+.footer p{
+    color: rgb(99, 99, 99);
+    font-size: 13px;
+}
+
+.footer p span{
+    color: #fff;
+}
+
+#back2Top{
+    position: fixed;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    line-height: 35px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    text-align: center;
+    bottom: 40px;
+    right: 20px;
+    height: 3.2rem;
+    width: 3.2rem;
+    top: 92.5%;
+    left: 96%;
+    text-align: center;
+    line-height: 35px;
+    background-color: rgb(77, 77, 77);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+
+@media (max-width: 576px) {
+
+    #back2Top{
+        height: 2.5rem;
+        width: 2.5rem;
+        top: 92%;
+        left: 90%;
+    }
+
+    #about-us #about-image{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+    }
+
+    .pricing .card{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .team-social{
+        left: 33%;
+    }
+
+    #my-contact{
+        margin-bottom: 5rem;
+        padding-bottom: 5rem;
+        height: 37rem;
+    }
+
+    .contact a{
+        left: 33%;
+    }
+    .fotter img{
+        left: 35%;
+    }
+    #welcomeText h1{
+        font-size: 40px;
+    }
+    #showcaseLorem{
+        font-size: 22px;
+    }
+    #showcaseLorem .typing-effect{
+        font-size: 20px;
+    }
+    #back2Top{
+        top: 92.5%;
+        left: 88%;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+@media (max-width:992px) {
+    #my-contact{
+        margin-bottom: 5rem;
+        height: 37rem;
+    }
+
+    .contact a{
+        left: 38%;
+    }
+}
