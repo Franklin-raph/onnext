@@ -3,8 +3,9 @@ const faws = document.querySelectorAll('.card')
 $(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 100) {
-        $('#nav-bg').addClass('fixed-top bg-nav').fadeIn();
-        $('.nav-item a').css('color','rgb(0, 162, 255)')
+        $('#nav-bg').addClass('fixed-top bg-nav');
+        $('.nav-item a').css('color','rgb(0, 162, 255)');
+        $('#nav-bg').css({'transition' :'0.3s'});
         $('#nav-img').css({
             'width':'130',
             'height':'55'

@@ -15,6 +15,7 @@ body{
 
 a:hover{
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .fa-bars{
@@ -86,12 +87,14 @@ a:hover{
 }
 
 #showcaseBtn-gs:hover{
-    background-color: rgb(0, 162, 255) ;
+    transition: 0.5s;
+    background-color: rgb(0, 162, 255);
     color:#fff;
 }
 
 #showcaseBtn-lm:hover{
-    background-color: rgb(0, 162, 255) ;
+    background-color: rgb(0, 162, 255);
+    transition: 0.5s;
     color:#fff;
 }
 
@@ -120,6 +123,7 @@ font-size: 38px;
 }
 #contact-btn:hover{
     background-color: rgb(0, 162, 255);
+    transition: 0.5s;
 }
 
 .services{
@@ -147,8 +151,10 @@ font-size: 38px;
 }
 
 #service-card:hover{
-    background-color:rgb(0, 162, 255) ;
+    background-color:rgb(0, 162, 255);
+    transition: 0.5s;
     color: #fff!important;
+    transition: 0.5s;
 }
 
 .services h4{
@@ -156,21 +162,27 @@ font-size: 38px;
 }
 
 .card:hover .flaticon-idea{
+    transition: 1s;
     color: #fff;
 }
 .card:hover .flaticon-idea-1{
+    transition: 1s;
     color: #fff;
 }
 .card:hover .flaticon-process{
+    transition: 1s;
     color: #fff;
 }
 .card:hover .flaticon-seo{
+    transition: 1s;
     color: #fff;
 }
 .card:hover .flaticon-development{
+    transition: 1s;
     color: #fff;
 }
 .card:hover .flaticon-discuss-issue{
+    transition: 1s;
     color: #fff;
 }
 
@@ -215,10 +227,39 @@ font-size: 38px;
     z-index: 1;
 }
 
-/* .portfolio-img{
-    width: 30px;
-    height: 30px;
-} */
+.layer{
+    background: transparent;
+    height: 92%;
+    width: 92%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50px 50px 0 50px;
+    transition: 0.5s;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.layer:hover{
+    background: rgba(0, 162, 255, 0.6);
+}
+
+.layer h5{
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    opacity: 0;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.layer:hover h5{
+    position: absolute;
+    top: 44%;
+    opacity: 1;
+}
 
 #portfolioBtnAll, #portfolioBtnWeb,
 #portfolioBtnCd,#portfolioBtnGd{
@@ -233,21 +274,25 @@ font-size: 38px;
 #portfolioBtnAll:hover {
     background-color: rgb(0, 162, 255);
     color: #fff;
+    transition: 0.5s;
 }
 
 #portfolioBtnWeb:hover {
     background-color: rgb(0, 162, 255);
     color: #fff;
+    transition: 0.5s;
 }
 
 #portfolioBtnCd:hover {
     background-color: rgb(0, 162, 255);
     color: #fff;
+    transition: 0.5s;
 }
 
 #portfolioBtnGd:hover {
     background-color: rgb(0, 162, 255);
     color: #fff;
+    transition: 0.5s;
 }
 
 .blog{
@@ -286,14 +331,33 @@ font-size: 38px;
 
 .blog-date{
     position: absolute;
-    top: 34%;
-    left: 72%;
+    top: 38%;
+    left: 73%;
     color: #fff;
     width: 85px;
     height: 45px;
     background-color: rgb(0, 162, 255);
     padding-top: 10px;
     text-align: center;
+    z-index: 2;
+}
+
+.bloglayer{
+    background: transparent;
+    height: 48%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50px 50px 0 50px;
+    transition: 0.5s;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.bloglayer:hover{
+    background: rgba(110, 110, 110, 0.6);
 }
 
 .team-card{
@@ -328,22 +392,27 @@ font-size: 38px;
 }
 
 .team-card:hover #team-img{
+    transition: 0.5s;
     border-radius: 0;
 }
 
 .team-card:hover .fa-twitter{
+    transition: 0.5s;
     color: #333;
 }
 
 .team-card:hover .fa-google-plus{
     color: #333;
+    transition: 0.5s;
 }
 
 .team-card:hover .fa-skype{
     color: #333;
+    transition: 0.5s;
 }
 
 .team-card:hover .fa-facebook{
+    transition: 0.5s;
     color: #333;
 }
 
@@ -395,6 +464,7 @@ font-size: 38px;
 
 .pricing .card:hover{
     box-shadow: 1px 3px 15px #333;
+    transition: 0.5s;
 }
 
 .pricing .card-body .btn{
@@ -412,6 +482,7 @@ font-size: 38px;
 .pricing .card-body a:hover{
     background-color: rgb(0, 162, 255);
     box-shadow: 2px 2px 10px rgb(0, 162, 255);
+    transition: 0.5s;
     border: none;
 }
 
@@ -446,6 +517,7 @@ font-size: 38px;
 
 .contact a:hover{
     background-color: rgb(0, 162, 255);
+    transition: 0.5s;
 }
 
 .footer{
@@ -471,6 +543,7 @@ font-size: 38px;
 
 .footer a:hover{
     color: rgb(99, 99, 99);
+    transition: 0.5s;
 }
 
 .footer p{
@@ -514,6 +587,10 @@ font-size: 38px;
         width: 2.5rem;
         top: 92%;
         left: 90%;
+    }
+
+    .layer h5{
+        margin-left: 5%;
     }
 
     #about-us #about-image{
@@ -569,5 +646,8 @@ font-size: 38px;
 
     .contact a{
         left: 38%;
+    }
+    .layer h5{
+        margin-left: 10%;
     }
 }
