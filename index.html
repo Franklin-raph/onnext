@@ -176,7 +176,8 @@
           <h2>Portfolio</h2>
           <p>Quisque eget nisl id nulla sagittis auctor quis id.
              Aliquam quis vehicula enim, non aliquam risus.</p>
-             <div class="row mt-3 mb-3 portfolioBtns">
+
+             <div id="filters" class="row mt-3 mb-3 portfolioBtns">
               <div class="col-lg-3 col-md-3 col-sm-4 mt-3">
                 <button id="portfolioBtnAll" data-filter="*">ALL</button>
                 </div>
@@ -194,59 +195,75 @@
              
         
         <div class="row portfolio-imgs">
-          <div class="col-lg-4 col-md-4 col-sm-12" >
-            <div class="card img-fluid graphicdesign creativedesign" id="portfolio-card">
-              <img src="/uploads/gallery_img-01.jpg" alt="" srcset="">
+            <div class="card img-fluid m-3 webdev" id="portfolio-card" style="width:200px">
+              <img src="/uploads/gallery_img-01.jpg">
               <div class="layer">
-                <h5>WEB DEVELOMENT</h5>
+                <h6>WEB DEVELOMENT</h6>
               </div>
             </div>
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card img-fluid graphicdesign webdev" id="portfolio-card">
-              <img src="/uploads/gallery_img-02.jpg" alt="" srcset="">
+          
+            <div class="card img-fluid m-3 creativedesign" id="portfolio-card" style="width:200px">
+              <img src="/uploads/gallery_img-02.jpg">
               <div class="layer">
-                <h5>CREATIVE DESIGN</h5>
+                <h6>CREATIVE DESIGN</h6>
               </div>
             </div>
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card img-fluid graphicdesign creativedesign" id="portfolio-card">
-              <img src="/uploads/gallery_img-03.jpg" alt="" srcset="">
+
+            <div class="card img-fluid m-3 graphicdesign" id="portfolio-card" style="width:200px">
+              <img src="/uploads/gallery_img-03.jpg">
               <div class="layer">
-                <h5>WEB DEVELOMENT</h5>
+                <h6>GRAPHIC DESIGN</h6>
               </div>
             </div>
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card img-fluid webdev creativedesign" id="portfolio-card">
-              <img src="/uploads/gallery_img-04.jpg" alt="" srcset="">
+
+            <div class="card img-fluid webdev" id="portfolio-card" style="width:200px">
+              <img src="/uploads/gallery_img-04.jpg">
               <div class="layer">
-                <h5>GRAPHIC DESIGN</h5>
+                <h6>WEB DEVELOMENT</h6>
               </div>
             </div>
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card img-fluid webdev creativedesign" id="portfolio-card">
-              <img src="/uploads/gallery_img-05.jpg" alt="" srcset="">
+
+            <div class="card img-fluid m-3 creativedesign" id="portfolio-card" style="width:200px">
+              <img src="/uploads/gallery_img-05.jpg">
               <div class="layer">
-                <h5>GRAPHIC DESIGN</h5>
+                <h6>CREATIVE DESIGN</h6>
               </div>
             </div>
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card img-fluid graphicdesign webdev" id="portfolio-card">
-              <img src="/uploads/gallery_img-06.jpg" alt="" srcset="">
+
+            <div class="card img-fluid graphicdesign" id="portfolio-card" style="width:200px">
+              <img src="/uploads/gallery_img-04.jpg">
               <div class="layer">
-                <h5>CREATIVE DESIGN</h5>
+                <h6>GRAPHIC DESIGN</h6>
               </div>
             </div>
-          </div>
+
+            <div class="card img-fluid m-3 graphicdesign" id="portfolio-card" style="width:200px">
+              <img src="/uploads/gallery_img-06.jpg">
+              <div class="layer">
+                <h6>GRAPHIC DESIGN</h6>
+              </div>
+            </div>
+
+            <div class="card img-fluid m-3 creativedesign" id="portfolio-card" style="width:200px">
+              <img src="/uploads/gallery_img-02.jpg">
+              <div class="layer">
+                <h6>WEB DEVELOMENT</h6>
+              </div>
+            </div>
+
+            <div class="card img-fluid m-3 creativedesign" id="portfolio-card" style="width:200px">
+              <img src="/uploads/gallery_img-01.jpg">
+              <div class="layer">
+                <h6>CREATIVE DESIGN</h6>
+              </div>
+            </div>
+
+            <div class="card img-fluid ml-3 webdev" id="portfolio-card" style="width:200px">
+              <img src="/uploads/gallery_img-03.jpg">
+              <div class="layer">
+                <h6>GRAPHIC DESIGN</h6>
+              </div>
+            </div>
         </div>
       </div>
     </section>
@@ -527,6 +544,7 @@
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> -->
 <script src="/js/isotope.js"></script>
 <script src="/js/typed.js"></script>
 <script src="/js/main.js"></script>
@@ -546,15 +564,7 @@ typeSpeed: '9',
 loop: true
 });
 
-// init Isotope
-var $grid = $('.portfolio-imgs').isotope({
-  // options
-});
-// filter items on button click
-$('.portfolioBtns').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-});
+
 </script>
 </body>
 
