@@ -11,6 +11,7 @@ body{
     font-family: 'Poppins', sans-serif;
     color:rgb(75, 75, 75);
     position: relative;
+    scroll-behavior: smooth;
 }
 
 a:hover{
@@ -20,6 +21,13 @@ a:hover{
 
 .fa-bars{
     color: rgb(0, 0, 0);
+}
+
+.navbar .active{
+    background-color: rgb(0, 162, 255)!important;
+    color: #fff!important;
+    border-radius: 50px 50px 0 50px!important;
+    transition: 0.2s;
 }
 
 .showcase{
@@ -98,7 +106,7 @@ a:hover{
     color:#fff;
 }
 
-#about-us{
+#aboutUs{
     position: relative;
     margin-bottom: 7rem;
 }
@@ -261,14 +269,14 @@ font-size: 38px;
     opacity: 1;
 }
 
-#portfolioBtnAll, #portfolioBtnWeb,
-#portfolioBtnCd,#portfolioBtnGd{
+#portfolioBtnAll{
     background-color: rgb(255, 255, 255);
     color:rgb(0, 0, 0);
     border-radius: 50px 50px 0 50px;
     padding: 10px 50px;
     box-shadow: 1px 1px 1px rgb(163, 163, 163);
     font-weight: 500;
+    border:none
 }
 
 #portfolioBtnAll:hover {
@@ -277,7 +285,7 @@ font-size: 38px;
     transition: 0.5s;
 }
 
-#portfolioBtnWeb:hover {
+/* #portfolioBtnWeb:hover {
     background-color: rgb(0, 162, 255);
     color: #fff;
     transition: 0.5s;
@@ -293,7 +301,7 @@ font-size: 38px;
     background-color: rgb(0, 162, 255);
     color: #fff;
     transition: 0.5s;
-}
+} */
 
 .blog{
     background-color: rgb(240, 240, 240);
@@ -331,7 +339,7 @@ font-size: 38px;
 
 .blog-date{
     position: absolute;
-    top: 38%;
+    top: 35%;
     left: 73%;
     color: #fff;
     width: 85px;
@@ -344,7 +352,7 @@ font-size: 38px;
 
 .bloglayer{
     background: transparent;
-    height: 48%;
+    height: 43.5%;
     width: 100%;
     left: 0;
     top: 0;
