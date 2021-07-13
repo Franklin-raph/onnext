@@ -51,3 +51,6 @@ $(document).ready(function(){
     })
 })
 
+setTimeout(function(){
+    $("#preloader").fadeToggle();
+},1500);
