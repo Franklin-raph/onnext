@@ -12,6 +12,8 @@ body{
     color:rgb(75, 75, 75);
     position: relative;
     scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 a:hover{
@@ -410,6 +412,7 @@ font-size: 38px;
     background-color: rgb(240, 240, 240);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    
 }
 
 .pricing .lead{
@@ -420,7 +423,8 @@ font-size: 38px;
 .pricing .card{
     border-radius: 20px;
     padding-bottom: 4rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
+    margin: 3rem auto;
 }
 
 .top-price{
@@ -497,12 +501,11 @@ font-size: 38px;
 }
 
 .contact a{
-    position: absolute;
-    left: 45%;
     border: none;
     border-radius: 50px;
     color:#fff;
     padding: 12px 24px;
+    margin: 0 auto;
 }
 
 .contact a:hover{
@@ -560,7 +563,7 @@ font-size: 38px;
     height: 3.2rem;
     width: 3.2rem;
     top: 92.5%;
-    left: 96%;
+    left: 90%;
     text-align: center;
     line-height: 35px;
     background-color: rgb(77, 77, 77);
@@ -577,9 +580,68 @@ font-size: 38px;
     position: fixed;
 }
 
+@media (max-width:992px) {
 
+    #welcomeText{
+        width: 1200px;
+    }
+
+    #welcomeText h1{
+        font-size: 60px;
+    }
+
+    #showcaseLorem{
+        font-size: 20px;
+    }
+    
+    #showcaseLorem span{
+        font-size: 25px;
+    }
+    
+    .services #service-card{
+        width: 100%;
+        gap: 30px;
+    }
+
+    #my-contact{
+        height: 24rem !important;
+        text-align: center;
+    }
+
+
+
+
+    #my-contact{
+        margin-bottom: 5rem;
+        height: 37rem;
+    }
+
+    .contact a{
+        left: 33%;
+    }
+    .layer h5{
+        margin-left: 10%;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    #welcomeText h1{
+        font-size: 50px;
+    }
+
+    #my-contact{
+        height: 36rem !important;
+    }
+}
 
 @media (max-width: 576px) {
+
+    #welcomeText h1{
+        font-size: 40px;
+        color: red;
+    }
 
     #back2Top{
         height: 2.5rem;
@@ -600,8 +662,7 @@ font-size: 38px;
 
     .pricing .card{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 
     .team-social{
@@ -634,18 +695,6 @@ font-size: 38px;
     }
 }
 
-@media (max-width:992px) {
-    #my-contact{
-        margin-bottom: 5rem;
-        height: 37rem;
-    }
 
-    .contact a{
-        left: 33%;
-    }
-    .layer h5{
-        margin-left: 10%;
-    }
-}
 
 
